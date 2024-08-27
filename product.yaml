@@ -1,8 +1,8 @@
 spring:
   datasource:
-  url: jdbc:postgresql://localhost:5000/product
-  username: product
-  password: product
+    url: jdbc:postgresql://localhost:5000/product
+    username: product
+    password: product
   jpa:
     hibernate:
       ddl-auto: validate
