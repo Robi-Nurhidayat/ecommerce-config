@@ -1,3 +1,21 @@
+spring:
+  datasource:
+  url: jdbc:postgresql://localhost:5000/product
+  username: product
+  password: product
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+    baseline-on-description: "init"
+    baseline-version: 0
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
 
 eureka:
   instance:
