@@ -9,3 +9,11 @@ spring:
       authentication-database: admin
 
 
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:4050/eureka/
